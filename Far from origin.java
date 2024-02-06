@@ -4,28 +4,34 @@ import java.util.*;
 import java.lang.*;
 import java.io.*;
 
-/* Name of the class has to be "Main" only if the class is public. */
 class Codechef
 {
 	public static void main (String[] args) throws java.lang.Exception
 	{
 		// your code goes here
 		Scanner sc=new Scanner(System.in);
-		int t=sc.nextInt();
-		for(int i=0;i<t;i++)
+		int T=sc.nextInt();
+		for(int i=0;i<T;i++)
 		{
-		    int x1=sc.nextInt();
-		    int x2=sc.nextInt();
-		    int y1=sc.nextInt();
-		    int y2=sc.nextInt();
-		    double d1=Math.sqrt(x1*x1+x2*x2);
-		    double d2=Math.sqrt(y1*y1+y2*y2);
-		    if(d1==d2)
-		       System.out.println("EQUAL");
-		    else if(d1>d2)
-		       System.out.println("AlEX");
-		    else 
-		       System.out.println("BOB");
+		        int X1=sc.nextInt();
+		        int Y1=sc.nextInt();
+		        int X2=sc.nextInt();
+		        int Y2=sc.nextInt();
+		        double a=Math.sqrt((X1*X1)+(Y1*Y1));
+		        double b=Math.sqrt((X2*X2)+(Y2*Y2));
+		        if(a==b)
+		        {
+		                System.out.println("Equal");
+		        }
+		        else if(a>b)
+		        {
+		                System.out.println("Alex");
+		        }
+		        else if(a<b)
+		        {
+		                System.out.println("Bob");
+		        }
 		}
+
 	}
 }
